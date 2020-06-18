@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .outer {
+        position: inherit;
+        width: auto;
+        height: auto;
+        /* text-align: center; */
+        padding: 10mm;
+        /* font-family: DejaVu Serif; */
+        /* font-family: Bell MT,Myriad Pro; */
+        font-family: "Myriad Pro", Myriad, "Bell MT", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+        font-size: 55%;
+        size: 210mm 297mm;
+
+      }
+
+      .yellow-box {
+        border: 5px solid rgba(175, 136, 37, 0.788);
+        height: auto;
+      }
+      .white-box {
+        border: 3px solid white;
+        height: auto;
+      }
+
+      .blue-box {
+        border: 2px solid rgba(175, 136, 37, 0.788);
+        /* height: auto; */
+        height: 60rem;
+        margin: 10px -20 -20px 10px;
+      }
+
+      /* .logo {
+        text-align: center;
+      } */
+
+      img {
+        height: 150px;
+        width: 200px;
+      }
+
+      .credential {
+        text-align: right;
+        margin-top: 20px;
+        margin-right: 20px;
+        padding-right: 20px;
+      }
+
+     
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+        /* background-color: #2196f3; */
+        padding: 0px;
+        height: 700px;
+      }
+
+      .grid-container > div {
+      
+        text-align: center;
+        /* padding: 20px 0; */
+        font-size: 30px;
+      }
+
+      .item1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+      .item2 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+      /* .ribbin_border {
+        
+        border: rgb(14, 14, 95) solid 4px;
+      } */
+      .ribbin {
+        background-color: rgba(6, 6, 56, 0.747);
+        width: 35%;
+        height: 900px;
+        margin-left: 50%;
+        position: relative;
+        border-left: rgba(175, 136, 37, 0.788) solid 4px;
+        border-right: rgba(175, 136, 37, 0.788) solid 4px;
+        box-shadow: -5px 0px 0px 0px rgba(6, 6, 56, 0.747),
+          5px 0px 0px 0px rgba(6, 6, 56, 0.747);
+        /* outline: 5px solid red; */
+        /* box-shadow: outset 4px 4px 4px 4px rgba(6, 6, 56, 0.747); */
+        /* inset 0 0 0 8px #ddd,
+    inset 0 0 0 12px #ccc,
+    inset 0 0 0 16px #bbb,
+    inset 0 0 0 20px #aaa,
+    inset 0 0 0 20px #999,
+    inset 0 0 0 20px #888; */
+
+        /* position: fixed; */
+      }
+      .content {
+        margin-top: 25%;
+      }
+      #heading {
+        color: #1A315C;
+       
+        font-size: 54pt;
+        font-weight: 900px !important;
+        margin-left: 10px !important;
+        margin-bottom: 0px !important;
+      }
+      #certificate {
+        width: 100%; 
+                    text-align: center; 
+                    border-bottom: 4px solid #64757D; 
+                    line-height: 0.1em;
+                    margin: 10px 0 20px;
+
+
+        color: #64757D;
+        font-size: 42pt;
+        padding-top: 1px !important;
+        font-weight: 900px;
+        margin-top: 30px;
+        margin-bottom: 45px;
+      }
+      #award {
+        
+       
+        padding-top: 1px !important;
+        font-weight: bold;
+        /* margin-top: 1px; */
+      }
+      #text {
+        color: rgba(6, 6, 56, 0.747);
+        font-size: 40px !important;
+      }
+      .triangle-up {
+        width: 0px;
+        height: 0px;
+        border-left: 90px solid transparent;
+        border-right: 90px solid transparent;
+        border-bottom: 100px solid white;
+        margin-top: 472px;
+        margin-left: -27%;
+        /* z-index: 10; */
+        /* position: absolute; */
+      }
+      #amityaLogo {
+        height: 60px;
+        width: 60px;
+      }
+      #amityaName {
+        margin-top: 0px !important;
+        font-weight: bold;
+        color: rgba(14, 14, 131, 0.904);
+      }
+      .logo {
+        /* padding-top: 20%; */
+        border: solid 10px rgba(175, 136, 37, 0.788);
+        background-color: white;
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        margin-top: 20%;
+        margin-left: -70px;
+        /* padding-top: 20px; */
+        /* position: relative; */
+      }
+      .logo_name {
+        padding-top: 50px;
+        /* font-weight: bold; */
+        color: rgba(14, 14, 131, 0.904);
+        /* position: absolute; */
+      }
+      .logo_position {
+        z-index: 10;
+        margin-top: 100%;
+        position: absolute;
+      }
+      #date {
+       
+        font-size: 13pt;
+        color:#1A315C;
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <!-- <div class="yellow-box">
+        <div class="white-box">
+          <div class="blue-box"> -->
+            <img src="./FreeLearningMonth.png" style="width: 100%; height:850px" alt="logo" />
+            <!-- <p class="credential">Credential Id: asdasddw</p> -->
+            <!-- <div class="logo"> -->
+            <!-- <img src="https://backend.zoops.zotalabs.com/images/amityLogo.png"> -->
+            <!-- </div>
+         <h1 class="name">Gaurav Agarwal</h1>
+            <hr class="border-bottom" />
+            <h2 class="h2-header">has completed</h2>
+            <h1 class="certificate-course">Certificate Course</h1>
+            <h2 class="h2-header">in</h2>
+            <h1 class="certification-name">Blockchain Engineer</h1>
+            <hr class="border-bottom" />
+            <h2 class="h2-header">Offered By Amity Future Academy</h2>
+            <p class="certification-date">on 22 June, 2020</p>
+            -->
+<div style="margin-top: -80%;">
+            <div class="grid-container">
+              <!-- <div class="item1">
+                <div class="ribbin_border">
+                  <div class="ribbin">
+                    <div class="logo_position">
+                      <div class="logo">
+                        <div class="logo_name">
+                          AMITY
+                          <img
+                            id="amityaLogo"
+                            src="./amityaLogo.png"
+                            alt="logo"
+                          />
+                          <p
+                            id="amityaName"
+                            style="font-size: 18px; padding-top: 0px;"
+                          >
+                            FUTURE ACADEMY
+                          </p>
+                        </div>
+                      </div>
+                      <div class="triangle-up"></div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              <div class="item2">
+                <div style="z-index: 50; margin-right: 30px;margin-top: 18%;">
+                <div style="
+              background-color: white;
+              height: 50px;
+              width: 15%;
+             float: right;
+             font-size: 13.5pt;
+                color: #59595B
+             
+            "
+          >
+          <img src="qrcode.png" alt="logo" style="width:120px;height: 120px;margin-top: -3%;" />
+          <br>
+          zEepzoUkq5
+        </div>
+                <div
+              style="
+                background-color: white;
+                height: 10%;
+                width: 15%;
+                float: right;
+                font-size: 13.5pt;
+                color: #59595B;
+                margin-right: -27px;
+              "
+            >
+              Credential id: 
+              
+            </div>
+          </div>
+                <div class="content">
+                  <p id="heading">PROFESSIONAL</p>
+                  <!-- p {
+                    width: 100%; 
+                    text-align: center; 
+                    border-bottom: 1px solid #000; 
+                    line-height: 0.1em;
+                    margin: 10px 0 20px; 
+                 }  -->
+                 
+                 <!-- p span { 
+                     background:#fff; 
+                     padding:0 10px; 
+                 } -->
+                 <div style="width: 53%; margin-left: 24%;"> 
+                  <p id="certificate">
+                     <span style=" background:#fff; padding:0 10px;">CERTIFICATE</span></p></div>
+                  
+                  <p id="award" style="margin-top: 1px; font-weight: bold; color:#64757D;
+                  font-size: 22pt;">
+                    awarded to
+                  </p>
+                  <h3 id="text" style="color: #1A315C; font-size: 30pt;">Rajesh P</h3>
+                  
+                  <p id="award" style="font-size:18pt;color: #1A315C;">has successfully completed course in</p>
+                  <!-- <h3 id="text">Supervised Learning</h3> -->
+                  <p id="award" style="font-size:  30pt;color: #1A315C;">Fundamentals of R</p>
+                  <p  id="award" style="font-size: 18pt;color: #1A315C;">Offered by Amitya Future Academy</p>
+                </div>
+               
+                <div style="margin-top: 120px;">
+                  <div
+                    id="date"
+                    style="float: left; color: #1A315C;margin-left: 10% !important;font-size: 13pt;margin-top: -10px;"
+                  >
+                  
+                    April 27th, 2020
+                  </div>
+                  <div
+                    style="
+                      float: right;
+                      color: #1A315C;
+                      margin-right: 10%;
+                      font-weight:bold;
+                      font-size: 13pt;
+                      margin-top: -10%;
+                    "
+                    
+                  >
+                  <img style="width: 150px; height:100px" src="https://amity-future.nyc3.digitaloceanspaces.com/logo/SiddharthSignature.png"/>
+
+                    <p style="margin-bottom: 0px ;">DIRECTOR</p>
+                    <p style="margin-top: 0px ;">AMITYA FUTURE ACADEMY</p>
+                  </div>
+               
+                </div>
+                
+              </div>
+            </div>
+            <div
+              style="
+                font-size: 12pt;
+                z-index: 20;
+                margin-top: 20%;
+                float: right;
+                margin-right: 5%;
+                color: #1A315C;
+              "
+            >
+              Verify at
+              Learning.amityfutureacademy.com/mod/customcert/verify_certificate.php
+              by entering credetial id
+            </div>
+        </div>
+          </div>
+        <!-- </div>
+      </div>
+    </div> -->
+  </body>
+</html>
